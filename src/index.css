@@ -1,0 +1,49 @@
+:root {
+    --background: white;
+    --Footer: 5rem;
+    --Nav: 2rem;
+
+
+    /* CALCULATIONS */
+    --FooterDouble: calc(var(--Footer)*2);
+    --NavDouble: calc( var(--Nav)*2);
+
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body, #root {
+    overscroll-behavior: none;
+
+    margin: 0px;
+    padding: 0px;
+    min-height: 100%;
+    height: 100%;
+}
+
+#wrapper {
+    min-height: 100%;
+    height: auto !important;
+    margin-top: calc( var(--Nav) - var(--NavDouble));
+    margin-bottom: calc(var(--Footer) - var(--FooterDouble));
+}
+
+#wrapper::before {
+    content: '';
+    display: block;
+    height: var(--Nav);
+}
+
+#wrapper::after {
+    content: '';
+    display: block;
+    height: var(--Footer);
+}
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+nav {
+    height: var(--Nav);
+
+    & ul {
+        
+        margin: unset;
+        padding: unset;
+    }
+}
