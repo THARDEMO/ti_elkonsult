@@ -1,4 +1,5 @@
 footer {
+    padding: var( --Padding25);
     height: var(--Footer);
     /* background: gray; */
 
@@ -9,4 +10,14 @@ footer {
     align-items: end;
 
     text-align: center;
+
+    & .FooterDivider {
+        height: 1px;
+        width: 100%;
+        background: var( --FontBread);
+    }
+
+    & .creatorParagraph {
+        font-size: 14px;
+    }
 }

@@ -7,7 +7,8 @@ const Footer = () => {
     return ( 
 
         <footer>
-            <p>©COPYRIGHT ALL RIGHTS RESERVED<br />{year} @ <a target='_blank' href='https://www.thardemo.com'>THARDEMO.COM</a></p>
+            <span className='FooterDivider'></span>
+            <p className='creatorParagraph'>{year} @ <a target='_blank' href='https://www.thardemo.com'>THARDEMO.COM</a></p>
         </footer>
 
     )

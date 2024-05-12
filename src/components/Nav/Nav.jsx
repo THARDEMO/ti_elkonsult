@@ -46,7 +46,7 @@ const Nav = () => {
         }
 
         //SCROLLED DOWN
-        if( comparitor >= 50) {
+        if( comparitor >= 150) {
             window.requestAnimationFrame(()=>elementRef['current'].classList.add( 'hiddenNav'));
             scrollDecider = scrollLocation;
         }

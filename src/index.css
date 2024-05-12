@@ -14,7 +14,7 @@
 
     /* UTILITY */
     --Footer: 5rem;
-    --Nav: 8rem;
+    --Nav: 6rem;
 
     --Padding10: 10px;
     --Padding25: 25px;
@@ -51,7 +51,7 @@ html, body, #root {
 
     & .gridContainer {
 
-        height: calc( 100vh - calc(var(--Footer) + var(--Nav)));
+        /* height: calc( 100vh - var(--Nav)); */
 
 
         display: grid;
