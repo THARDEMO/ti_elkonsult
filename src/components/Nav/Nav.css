@@ -1,9 +1,88 @@
 nav {
-    height: var(--Nav);
+    transition: top .5s ease-in-out;
+
+    position: fixed;
+    top: calc(var(--Nav) / 4);
+    left: 50%;
+    transform: translate( -50%);
+
+    width: 50%;
+    max-width: 30rem;
+
 
     & ul {
+        background: var( --black);
         
+        display: flex;
+        justify-content: space-evenly;
+                padding: 10px;
+        border-radius: 25px;
+
+        list-style: none;
         margin: unset;
-        padding: unset;
+
+
+        & li {
+            & a {
+                color: var(--white) !important;
+                display: block;
+                text-transform: uppercase;
+                font-weight: 200;
+                font-size: 16px;
+            }
+        }
+
+        & .nav-current::after {
+            display: block;
+            content: '';
+            background: var(--white);
+            height: 1px;
+            margin: 0 auto;
+            border-radius: var(--Border-Radius);
+            animation: selectedNav .3s forwards;
+        }
+    }
+}
+
+@keyframes selectedNav {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+nav.hiddenNav {
+    top: calc(var(--Nav) - var(--NavDouble));
+    animation: hideNav .5s forwards;
+    
+
+    & ul {
+
+        & li {
+            animation: hideText 1s;
+            display: none;
+
+        }
+    }
+}
+
+@keyframes hideText {
+    from {
+        display: block;
+    }
+    to {
+        font-size: 10px;
+        opacity: 0;
+    }
+}
+
+@keyframes hideNav {
+    50% {
+        scale: .9;
+    }
+    to {
+        width: 20px;
     }
 }

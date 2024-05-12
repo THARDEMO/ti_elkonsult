@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuid } from 'uuid';
 
 const ProjectList = () => {
 
@@ -9,7 +9,7 @@ const ProjectList = () => {
     for( const project of projects) {
         
         elements.push( 
-            <li key={uuidv4()}>
+            <li key={uuid()}>
                 <Link to={`/projects/${project}`}>{project}</Link>
             </li>
         );

@@ -1,8 +1,25 @@
-:root {
-    --background: white;
-    --Footer: 5rem;
-    --Nav: 2rem;
+@import url('/css/archivo.css');
+@import url('/css/clash-display.css');
 
+:root {
+    /* COLORS */
+    --background: #F4F3EF;
+    --white: #FFFFFF;
+    --black: #000000;
+    --FontBread: #4E4E4E;
+    
+    /* FONTS */
+    --Clash-Display: ClashDisplay-Variable;
+    --Archivo: Archivo-Variable;
+
+    /* UTILITY */
+    --Footer: 5rem;
+    --Nav: 8rem;
+
+    --Padding10: 10px;
+    --Padding25: 25px;
+    --Border-Radius: 15px;
+    --Border-Radius-Small: 5px;
 
     /* CALCULATIONS */
     --FooterDouble: calc(var(--Footer)*2);
@@ -16,6 +33,7 @@
 
 html, body, #root {
     overscroll-behavior: none;
+    background: var(--background);
 
     margin: 0px;
     padding: 0px;
@@ -26,8 +44,27 @@ html, body, #root {
 #wrapper {
     min-height: 100%;
     height: auto !important;
-    margin-top: calc( var(--Nav) - var(--NavDouble));
+    margin: 0 auto;
+    padding-top: calc( var(--Nav) - var(--NavDouble));
     margin-bottom: calc(var(--Footer) - var(--FooterDouble));
+    width: 85vw;
+
+    & .gridContainer {
+
+        height: calc( 100vh - calc(var(--Footer) + var(--Nav)));
+
+
+        display: grid;
+        background: var(--black);
+        padding: 2px;
+        gap: 2px;
+
+        & div {
+            border-radius: var(--Border-Radius-Small);
+            background: var(--white);
+        }
+
+    }
 }
 
 #wrapper::before {
@@ -42,8 +79,28 @@ html, body, #root {
     height: var(--Footer);
 }
 
+h1, h2, h3 {
+    font-family: var(--Clash-Display);
+    font-weight: 700;
+    line-height: 83%;
 
+    margin: unset;
+}
 
+p {
+    font-family: var(--Archivo);
+    color: var(--FontBread);
+    font-weight: 300;
+    line-height: 120%;
 
+}
 
+.internal-link {
+    font-family: var(--Archivo);
+    text-decoration: none;
+}
+
+.internal-link:visited {
+    color: inherit;
+}
 

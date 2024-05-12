@@ -14,6 +14,19 @@ export function ProjectPage() {
             <div>
                 <h1>Projects</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet repudiandae quae commodi, quod laborum! Iste minima at est quaerat rerum accusamus ducimus, dolore aut. Ad non amet provident assumenda!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet repudiandae quae commodi, quod laborum! Iste minima at est quaerat rerum accusamus ducimus, dolore aut. Ad non amet provident assumenda!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet repudiandae quae commodi, quod laborum! Iste minima at est quaerat rerum accusamus ducimus, dolore aut. Ad non amet provident assumenda!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet repudiandae quae commodi, quod laborum! Iste minima at est quaerat rerum accusamus ducimus, dolore aut. Ad non amet provident assumenda!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet repudiandae quae commodi, quod laborum! Iste minima at est quaerat rerum accusamus ducimus, dolore aut. Ad non amet provident assumenda!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet repudiandae quae commodi, quod laborum! Iste minima at est quaerat rerum accusamus ducimus, dolore aut. Ad non amet provident assumenda!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet repudiandae quae commodi, quod laborum! Iste minima at est quaerat rerum accusamus ducimus, dolore aut. Ad non amet provident assumenda!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet repudiandae quae commodi, quod laborum! Iste minima at est quaerat rerum accusamus ducimus, dolore aut. Ad non amet provident assumenda!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet repudiandae quae commodi, quod laborum! Iste minima at est quaerat rerum accusamus ducimus, dolore aut. Ad non amet provident assumenda!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet repudiandae quae commodi, quod laborum! Iste minima at est quaerat rerum accusamus ducimus, dolore aut. Ad non amet provident assumenda!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet repudiandae quae commodi, quod laborum! Iste minima at est quaerat rerum accusamus ducimus, dolore aut. Ad non amet provident assumenda!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet repudiandae quae commodi, quod laborum! Iste minima at est quaerat rerum accusamus ducimus, dolore aut. Ad non amet provident assumenda!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet repudiandae quae commodi, quod laborum! Iste minima at est quaerat rerum accusamus ducimus, dolore aut. Ad non amet provident assumenda!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet repudiandae quae commodi, quod laborum! Iste minima at est quaerat rerum accusamus ducimus, dolore aut. Ad non amet provident assumenda!</p>
             </div>
             <button onClick={()=>navigation(-1)}>back</button>
             <ProjectList />

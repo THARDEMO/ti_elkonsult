@@ -1,0 +1,30 @@
+#_404-grid {
+    /* height: 100vh; */
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-auto-rows: 40vh; */
+
+    & div {
+        display: grid;
+        padding: var( --Padding25);
+        align-items: end;
+
+
+        & h1 {
+            font-size: 15rem;
+        }
+
+        & h2 {
+            /* text-align: end; */
+            font-size: 8rem;
+        }
+    }
+
+    & ._404Div {
+        grid-area: 1 / span 2;
+    }
+
+    & .resourceDiv {
+        grid-area: 2 / 2 / 3 / 4;
+
+    }
+}
