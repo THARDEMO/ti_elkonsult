@@ -14,7 +14,6 @@ function Home() {
                 <p>Hello who am i page osv</p>
             </div>
             <button className="linkBtn" onClick={() => navigate( 'projects')}>Projects</button>
-
         </>
     )
 }

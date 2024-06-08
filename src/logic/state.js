@@ -1,6 +1,7 @@
 const _state = {}
 
 export const STATE = {
+    apiPath: 'http://localhost:9999/',
     Get,
     Post,
 }
